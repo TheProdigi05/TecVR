@@ -43,3 +43,6 @@ desktop.ini
 
 # Gradle / Android
 .gradle/
+
+# Unity meta files must be tracked
+!*.meta
