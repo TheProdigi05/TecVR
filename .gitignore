@@ -1,4 +1,6 @@
+# =========================
 # Unity generated folders
+# =========================
 [Ll]ibrary/
 [Tt]emp/
 [Oo]bj/
@@ -9,7 +11,22 @@
 [Mm]emoryCaptures/
 [Rr]ecordings/
 
+# =========================
+# Unity generated files
+# =========================
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+sysinfo.txt
+*.stackdump
+
+# =========================
 # Visual Studio / Rider / VS Code
+# =========================
 .vs/
 .idea/
 .vscode/
@@ -20,29 +37,34 @@
 *.tmp
 *.user
 *.userprefs
-*.pidb
-*.booproj
 
-# Unity generated files
-*.pdb
-*.mdb
-*.opendb
-*.VC.db
-sysinfo.txt
-*.stackdump
-
+# =========================
 # OS files
+# =========================
 .DS_Store
 Thumbs.db
 desktop.ini
 
-# Builds
+# =========================
+# Builds / exports
+# =========================
 *.apk
 *.aab
 *.unitypackage
 
-# Gradle / Android
+# =========================
+# Android / Gradle generated
+# =========================
 .gradle/
 
-# Unity meta files must be tracked
+# Unity crash/recovery/temp
+.utmp/
+[Aa]ssets/_Recovery/
+*_BurstDebugInformation_DoNotShip/
+*_BackUpThisFolder_ButDontShipItWithYourGame/
+*BackupThisFolder_ButDontShipItWithYourGame/
+
+# =========================
+# Do NOT ignore Unity .meta files
+# =========================
 !*.meta
