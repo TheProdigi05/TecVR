@@ -13,13 +13,12 @@ Material:
   m_ModifiedSerializedProperties: 10
   m_ValidKeywords:
   - _DETAIL_SCALED
-  - _EMISSION
   - _NORMALMAP
   - _OCCLUSIONMAP
   - _PARALLAXMAP
   - _SPECULAR_SETUP
   m_InvalidKeywords: []
-  m_LightmapFlags: 3
+  m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 1
   m_CustomRenderQueue: -1
@@ -52,6 +51,8 @@ Material:
     - _Parallax: 0.005
     - _Smoothness: 0
     m_Colors:
+    - _BaseColor: {r: 0.47058824, g: 0.50980395, b: 0.54901963, a: 1}
+    - _Color: {r: 0.47058815, g: 0.5098039, b: 0.5490196, a: 1}
     - _EmissionColor: {r: 0.933033, g: 0.933033, b: 0.933033, a: 1}
     - _SpecColor: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
