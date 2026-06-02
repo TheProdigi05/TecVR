@@ -3,7 +3,10 @@ using UnityEngine;
 public class RepairPart : MonoBehaviour
 {
     public RepairManager repairManager;
-    public AudioSource pickupSound;
+
+    [Header("Audio")]
+    public AudioClip pickupClip;
+    public float pickupVolume = 0.7f;
 
     private bool collected = false;
 
@@ -18,8 +21,8 @@ public class RepairPart : MonoBehaviour
             if (repairManager != null)
                 repairManager.CollectPart();
 
-            if (pickupSound != null)
-                pickupSound.Play();
+            if (pickupClip != null)
+                AudioSource.PlayClipAtPoint(pickupClip, transform.position, pickupVolume);
 
             gameObject.SetActive(false);
         }

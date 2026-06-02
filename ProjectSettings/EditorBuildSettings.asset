@@ -11,9 +11,12 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Main_VR_Prototype.unity
     guid: 4ca0cd80ef81cd749aa255b53dde2931
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Main_VR_Prototype_Terrain.unity
     guid: 095ed446e855d3943ad5391e6ac4f858
+  - enabled: 1
+    path: Assets/Scenes/Main_VR_Prototype_Stable 1.unity
+    guid: 86b6ec17dcfd14d40a9c0bde800a5d70
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: b5f60ff663ef371429e40ababacf20d1, type: 2}

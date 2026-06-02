@@ -13,6 +13,9 @@ public class RepairManager : MonoBehaviour
     [Header("Final")]
     public GameObject winPanel;
 
+    [Header("Horror Events")]
+    public HorrorSequenceManager horrorSequenceManager;
+
     private void Start()
     {
         UpdateUI();
@@ -23,12 +26,20 @@ public class RepairManager : MonoBehaviour
 
     public void CollectPart()
     {
+        if (collectedParts >= totalParts)
+            return;
+
         collectedParts++;
         UpdateUI();
 
         if (collectedParts >= totalParts && objectiveText != null)
         {
             objectiveText.text = "Objetivo: Regresa al auto y repáralo.";
+        }
+
+        if (horrorSequenceManager != null)
+        {
+            horrorSequenceManager.OnPartsCollected(collectedParts);
         }
     }
 
@@ -43,6 +54,7 @@ public class RepairManager : MonoBehaviour
         {
             if (objectiveText != null)
                 objectiveText.text = "Aún faltan piezas para reparar el auto.";
+
             return;
         }
 
