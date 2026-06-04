@@ -26,11 +26,10 @@ Material:
   m_ModifiedSerializedProperties: 2
   m_ValidKeywords:
   - _DETAIL_SCALED
-  - _EMISSION
   - _SMOOTHNESS_TEXTURE_ALBEDO_CHANNEL_A
   - _SPECULAR_SETUP
   m_InvalidKeywords: []
-  m_LightmapFlags: 3
+  m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
@@ -53,6 +52,9 @@ Material:
     m_Ints: []
     m_Floats:
     - _DetailAlbedoMapScale: 0.7
-    m_Colors: []
+    - _Glossiness: 0.05
+    - _Smoothness: 0.05
+    m_Colors:
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
